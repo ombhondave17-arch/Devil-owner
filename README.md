@@ -1,0 +1,22 @@
+HOOK_LIB_NO_ORIG("libanogs.so","0x51FA80",crashfix);modify hooklib
+HOOK_LIB_NO_ORIG("libanogs.so","0x508750",sub_508750);
+HOOK_LIB("libanog.so","0x5087E4",hsub_5087E4,osub_5087E4);
+HOOK_LIB("libanog.so","0x32805C",hsub_32805C,osub_32805C);
+HOOK_LIB("libanogs.so", "0x228168",c35,oc35);
+HOOK_LIB("libanogs.so", "0x4F1F2", sub_4F1F20, orig_sub_4F1F20);
+HOOK_LIB("libanogs.so", "0x32F334", hsub_32F334, osub_32F334); 
+HOOK_LIB("libanogs.so", "0x32F1B4", hsub_32F1B4, osub_32F1B4); 
+HOOK_LIB("libanogs.so", "0x46AF34", sub_46AF34); 
+HOOK_LIB("libanogs.so","0x335D1C",hsub_335D1C, sub_335D1C);
+HOOK_LIB_NO_ORIG("libanogs.so","0x479324",sub_479324);
+HOOK_LIB("libanogs.so","0x460388",hsub_460388,sub_460388);
+PATCH_LIB("libUE4.so","0x71F5640","00 00 80 D2 C0 03 5F D6");
+PATCH_LIB("libanogs.so","0x330494","00 00 80 D2 C0 03 5F D6");
+PATCH_LIB("libanogs.so","0x3315A0","00 00 80 D2 C0 03 5F D6");
+PATCH_LIB("libanogs.so","0x21EC1C","00 00 80 D2 C0 03 5F D6");
+PATCH_LIB("libanogs.so","0x3F99E8","00 00 80 D2 C0 03 5F D6"); 
+PATCH_LIB("libanogs.so", "0x21EB28","00 00 80 D2 C0 03 5F D6");
+PATCH_LIB("libanogs.so", "0x21EB50","00 00 80 D2 C0 03 5F D6");
+PATCH_LIB("libanogs.so", "0x21EB94","00 00 80 D2 C0 03 5F D6");
+PATCH_LIB("libanogs.so", "0x21ECEC","00 00 80 D2 C0 03 5F D6");
+PATCH_LIB("libanogs.so", "0x21EC94","00 00 80 D2 C0 03 5F D6");
