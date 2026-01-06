@@ -1,22 +1,17 @@
 HOOK_LIB_NO_ORIG("libanogs.so","0x51FA80",crashfix);modify hooklib
-HOOK_LIB_NO_ORIG("libanogs.so","0x508750",sub_508750);
-HOOK_LIB("libanog.so","0x5087E4",hsub_5087E4,osub_5087E4);
-HOOK_LIB("libanog.so","0x32805C",hsub_32805C,osub_32805C);
-HOOK_LIB("libanogs.so", "0x228168",c35,oc35);
-HOOK_LIB("libanogs.so", "0x4F1F2", sub_4F1F20, orig_sub_4F1F20);
-HOOK_LIB("libanogs.so", "0x32F334", hsub_32F334, osub_32F334); 
-HOOK_LIB("libanogs.so", "0x32F1B4", hsub_32F1B4, osub_32F1B4); 
-HOOK_LIB("libanogs.so", "0x46AF34", sub_46AF34); 
-HOOK_LIB("libanogs.so","0x335D1C",hsub_335D1C, sub_335D1C);
-HOOK_LIB_NO_ORIG("libanogs.so","0x479324",sub_479324);
-HOOK_LIB("libanogs.so","0x460388",hsub_460388,sub_460388);
-PATCH_LIB("libUE4.so","0x71F5640","00 00 80 D2 C0 03 5F D6");
-PATCH_LIB("libanogs.so","0x330494","00 00 80 D2 C0 03 5F D6");
-PATCH_LIB("libanogs.so","0x3315A0","00 00 80 D2 C0 03 5F D6");
-PATCH_LIB("libanogs.so","0x21EC1C","00 00 80 D2 C0 03 5F D6");
-PATCH_LIB("libanogs.so","0x3F99E8","00 00 80 D2 C0 03 5F D6"); 
-PATCH_LIB("libanogs.so", "0x21EB28","00 00 80 D2 C0 03 5F D6");
-PATCH_LIB("libanogs.so", "0x21EB50","00 00 80 D2 C0 03 5F D6");
-PATCH_LIB("libanogs.so", "0x21EB94","00 00 80 D2 C0 03 5F D6");
-PATCH_LIB("libanogs.so", "0x21ECEC","00 00 80 D2 C0 03 5F D6");
-PATCH_LIB("libanogs.so", "0x21EC94","00 00 80 D2 C0 03 5F D6");
+HOOK_LIB("libanogs.so", "0x42DC24", hsub_42DC24, sub_42DC24); //FIX ONE DAY 
+HOOK_LIB("libanogs.so", "0x491BAC", hsub_491BAC, sub_491BAC); //FIX ALL TERMINATION 
+HOOK_LIB("libanogs.so", "0x26BC24", hsub_26BC24, sub_26BC24); //FLAG FIX 
+HOOK_LIB("libanogs.so", "0x26B948", hsub_26B948, sub_26B948); //ANTI 10Y FIX 
+HOOK_LIB("libanogs.so", "0x269E50", hsub_269E50, sub_4269E50); //REPORT BLOCK 
+HOOK_LIB("libanogs.so", "0x269C6C", hsub_269C6C, sub_269C6C); //BT SUPPORT
+HOOK_LIB("libanogs.so", "0x269A40", hsub_269A40, sub_269A40); //AMI BOT SUPPORT
+HOOK_LIB("libanogs.so", "0x2699A4", hsub_2699A4, sub_2699A4); //ESP SUPPORT
+HOOK_LIB("libanogs.so", "0x212C9C", hsub_212C9C, sub_212C9C); //AVOID REPORT 
+HOOK_LIB("libanogs.so", "0x212C74", hsub_212C74, sub_212C74); //6H FIX
+HOOK_LIB("libanogs.so", "0x42DC44", hsub_42DC44, sub_42DC44); //SUPPORT 
+HOOK_LIB("libanogs.so", "0x478D24", hsub_478D24, sub_478D24); //SUPPORT 
+Hook_LIB("libanogs.so","0x505A44",hsub_478D24, sub_478D24); // 1DAy fix
+Hook_LIB("slibanogs.so", "0x3D4C40", "00 00 80 D2 C0 03 5F D6"); // random ban fix ;
+Hook_LIB("libanogs.so", "0x22DF38", "00 00 80 D2 C0 03 5F D6"); // 5m ,10m, 30m ,1 hours fix all
+
