@@ -14,4 +14,18 @@ HOOK_LIB("libanogs.so", "0x478D24", hsub_478D24, sub_478D24); //SUPPORT
 Hook_LIB("libanogs.so","0x505A44",hsub_478D24, sub_478D24); // 1DAy fix
 Hook_LIB("slibanogs.so", "0x3D4C40", "00 00 80 D2 C0 03 5F D6"); // random ban fix ;
 Hook_LIB("libanogs.so", "0x22DF38", "00 00 80 D2 C0 03 5F D6"); // 5m ,10m, 30m ,1 hours fix all
-
+PATCH_LIB("libanogs.so","0x4D4C94","00 00 80 D2 C0 03 5F D6");// online + offline
+PATCH_LIB("libanogs.so", "0x213000 + 0x70", "C0 03 5F D6");//Crash
+PATCH_LIB("libanogs.so","0x228168","00 00 80 D2 C0 03 5F D6");//Crc
+PATCH_LIB("libanogs.so","0x330494","00 00 80 D2 C0 03 5F D6");//Crc
+PATCH_LIB("libanogs.so","0x39F56C","00 00 80 D2 C0 03 5F D6");//Crc
+MemoryPatch::createWithHex("libanogs.so",0x132F20,"00 20 70 47").Modify(); // 37
+MemoryPatch::createWithHex("libanogs.so",0x1C5080,"1E FF 2F E1").Modify(); // 10y
+MemoryPatch::createWithHex("libanogs.so",0x3AA750,"00 00 A0 E3 1E FF 2F E1").Modify(); // crash
+PATCH_LIB("libUE4.so","0x4035A7C","00 00 A0 E3 1E FF 2F E1");//termination /////////////HOOKING BY @REGA_MODS1🪝////////////////////////////////
+HOOK_LIB_NO_ORIG("libUE4.so","0xB5B1630",ZEUS);//OFFLINE DATA
+HOOK_LIB_NO_ORIG("libUE4.so","0x74EB67C",ZEUS);//ANTICHEAT BLOCK
+HOOK_LIB_NO_ORIG("libUE4.so","0x706E398",ZEUS);//FLAG DELAY
+HOOK_LIB_NO_ORIG("libUE4.so","0x8A16620",ZEUS);//FLAY DELAY 
+HOOK_LIB_NO_ORIG("libUE4.so","0x706E398",ZEUS);// 10 SAAL FIXER
+//////////////////////-PATCH LIB START HERE-///////////////////////
